@@ -13,3 +13,9 @@ line-length = 99
 files = ["src", "train.py"]
 no_implicit_optional = true
 check_untyped_defs = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
